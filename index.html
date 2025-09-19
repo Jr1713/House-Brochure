@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Home Brochure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Welcome to Your Dream Home</h1>
+    <p>Elegant • Modern • Comfortable Living</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2>House Features</h2>
+    <div class="features-container">
+      <button class="feature-btn" data-feature="living">Spacious Living</button>
+      <button class="feature-btn" data-feature="kitchen">Modern Kitchen</button>
+      <button class="feature-btn" data-feature="bedroom">Peaceful Bedrooms</button>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="featureModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalTitle"></h2>
+
+      <div class="slideshow">
+        <button class="prev">&#10094;</button>
+        <div class="slide-wrapper">
+          <img id="modalImage" src="" alt="Feature Image">
+          <p id="modalCaption"></p>
+        </div>
+        <button class="next">&#10095;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="4" placeholder="Write your message"></textarea>
+
+      <button type="submit">Send Inquiry</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Dream Homes Realty. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
